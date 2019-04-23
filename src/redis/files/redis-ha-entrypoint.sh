@@ -228,7 +228,8 @@ function get_master_ip_address() {
   else
     master_uuid="$(get_master_uuid)"
 
-    get_info_from_rancher_metadata_by_resource "/containers/${master_uuid}/primary_ip"
+    # get_info_from_rancher_metadata_by_resource "/containers/${master_uuid}/primary_ip"
+    ${REDIS_HA_SENTINEL_MASTER_NAME}
   fi
 }
 
