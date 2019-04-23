@@ -2,7 +2,7 @@ version: '2'
 
 services:
   redis:
-    image: nettoclaudio/rancher-cattle-redis-ha-redis:1.0.0-rancher1
+    image: redis
     environment:
       DEBUG_MODE: ${debug_mode}
       REDIS_HA_MASTER_PASSWORD: ${redis_password}
